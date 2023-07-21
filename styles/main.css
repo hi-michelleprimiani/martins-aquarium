@@ -1,0 +1,165 @@
+.website {
+  background-image: linear-gradient(rgb(142, 197, 221), rgb(23, 60, 83));
+  /* background-image: url(https://pngimg.com/d/fish_PNG25124.png);
+  background-size: 400px; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 50px;
+  text-shadow: 2px 3px rgb(255, 255, 255);
+}
+
+.contentstyle {
+  display: flex;
+  height: 100%;
+}
+
+.fishInserted,
+.tipInserted {
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+}
+
+.fishInserted {
+  flex: 70;
+}
+
+.tipInserted {
+  flex: 30;
+  text-align: center;
+  margin: 20px;
+  border: solid;
+  border-color: rgb(71, 179, 237);
+  background-color: rgb(227, 172, 224);
+}
+
+.fishList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.fish__card {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  text-align: center;
+  margin: 20px;
+  border: solid;
+  border-color: rgb(71, 179, 237);
+  background-color: rgb(227, 172, 224);
+}
+
+.fish__image {
+  width: 300px;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.fish__name {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.fish__species {
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(0, 87, 163);
+}
+
+////// animation
+
+/*html,
+body {
+  box-sizing: border-box;
+  margin: 30px;
+  padding: 50px;
+}
+
+body {
+  background: radial-gradient(
+    circle at -16% -16%,
+    rgb(89, 187, 236),
+    slateblue
+  );
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+body::before {
+  animation: anim 30s infinite;
+  background: radial-gradient(circle at 0% 0%, rgb(146, 226, 233), slateblue);
+  border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
+  box-shadow: 0 -2vmin 4vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset,
+    0 -2vmin 7vmin purple inset;
+  content: "";
+  filter: drop-shadow(0 0 3vmin Thistle)
+    drop-shadow(0 5vmin 4vmin rgb(246, 119, 242))
+    drop-shadow(2vmin -2vmin 15vmin rgb(22, 9, 94))
+    drop-shadow(0 0 7vmin MediumOrchid);
+  height: 10vmin;
+  width: 10vmin;
+  padding: 175px;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+    box-shadow: 0 -2vmin 4vmin LightPink inset,
+      0 -4vmin 4vmin rgb(6, 54, 228) inset, 0 -2vmin 7vmin purple inset;
+  }
+
+  10% {
+    border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+  }
+
+  20% {
+    border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+  }
+
+  30% {
+    border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+    box-shadow: 0 -4vmin 8vmin hotpink inset,
+      -1vmin -2vmin 6vmin LightPink inset,
+      -1vmin -2vmin 4vmin rgb(0, 22, 225) inset, 1vmin 4vmin 8vmin purple inset;
+  }
+
+  40% {
+    border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+  }
+
+  50% {
+    border-radius: 100%;
+    box-shadow: 0 4vmin 16vmin hotpink inset, 0 2vmin 5vmin LightPink inset,
+      0 4vmin 4vmin MediumPurple inset, 0 6vmin 8vmin purple inset;
+  }
+
+  60% {
+    border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+  }
+
+  70% {
+    border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+    box-shadow: 1vmin 1vmin 8vmin LightPink inset,
+      2vmin -1vmin 4vmin MediumPurple inset, -1vmin -1vmin 16vmin purple inset;
+  }
+
+  80% {
+    border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+  }
+
+  90% {
+    border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+  }
+}
