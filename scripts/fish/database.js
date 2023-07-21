@@ -121,7 +121,7 @@ let database = {
       name: "Rainbow",
     },
     {
-      image: "https://www.disneyclips.com/images4/images/flounder24.png",
+      image: "https://www.pngmart.com/files/22/Flounder-PNG-Isolated-Pic.png",
       species: "Flounder",
       length: "1 feet",
       food: "Crustaceans and small fish",
@@ -181,7 +181,7 @@ let tipList = {
     {
       tip: "Regular Water Changes",
       tankCare:
-        "Perform regular water changes (about 25% of the tank volume) every 1-2 weeks to maintain water quality and remove waste and toxins.",
+        "Perform regular water changes (about 25% of the tank volume) every 1-2 weeks to maintain water quality and remove waste and toxins.\n",
     },
     {
       tip: "Proper Filtration",
@@ -206,10 +206,29 @@ let tipList = {
   ],
 };
 
+let locations = {
+  harvestLocations: [
+    { id: 1, name: "Pacific Ocean" },
+    { id: 2, name: "Atlantic Ocean" },
+    { id: 3, name: "Indian Ocean" },
+    { id: 4, name: "Tropical Reefs" },
+    { id: 5, name: "Amazon River" },
+    { id: 6, name: "Australia and New Guinea" },
+    { id: 7, name: "Rivers" },
+    { id: 8, name: "Streams" },
+  ],
+};
+
 export const getFish = () => {
   return database.fish.map((fish) => ({ ...fish }));
 };
 
 export const getTips = () => {
   return tipList.tips.map((tips) => ({ ...tips }));
+};
+
+export const getLocations = () => {
+  return locations.harvestLocations.map((harvestLocations) => ({
+    ...harvestLocations,
+  }));
 };
