@@ -2,8 +2,6 @@ import { FishList } from "./fish/FishList.js";
 import { tipList } from "./tips/tips.js";
 import { locationList } from "./locations/locations.js";
 
-debugger;
-
 const parentHTMLElement = document.querySelector(".fishInserted");
 parentHTMLElement.innerHTML = FishList();
 

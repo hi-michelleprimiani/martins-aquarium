@@ -4,10 +4,9 @@ export const tipList = () => {
   const tips = getTips();
   let htmlString = '<article class="TipList">';
   for (const tip of tips) {
-    htmlString += `<section class ="tankDetails">
+    htmlString += `
             <div class="tankDetails_tips">${tip.tip}</div>
-            <div class="tankDetails_care">${tip.tankCare}</div></>
-            </section>`;
+            <div class="tankDetails_care">${tip.tankCare}</div></>`;
   }
   htmlString += `</article>`;
   return htmlString;
